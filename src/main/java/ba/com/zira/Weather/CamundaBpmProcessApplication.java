@@ -11,7 +11,7 @@ import org.camunda.bpm.engine.ProcessEngine;
 /**
  * Process Application exposing this application's resources the process engine. 
  */
-@ProcessApplication
+
 public class CamundaBpmProcessApplication extends ServletProcessApplication {
 
   private static final String PROCESS_DEFINITION_KEY = "testbpm";
@@ -20,7 +20,7 @@ public class CamundaBpmProcessApplication extends ServletProcessApplication {
    * In a @PostDeploy Hook you can interact with the process engine and access 
    * the processes the application has deployed. 
    */
-  @PostDeploy
+
   public void onDeploymentFinished(ProcessEngine processEngine) {
 
     // start an initial process instance
